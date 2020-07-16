@@ -1,7 +1,7 @@
 const express = require('express');
 const helmet = require("helmet");
 
-const recipeRouter = require('./recipes/recipes-router.js');
+const recipeRouter = require('../recipes/recipes-router');
 
 const db = require("../data/connection.js");
 
@@ -19,7 +19,7 @@ server.get("/api/recipes", (req, res) => {
       })
       .catch(error => {
           res.status(500).json({ 
-            messge: 'There was an error getting the recipes', 
+            message: 'There was an error getting the recipes', 
             error: error.message });
       });
 });
