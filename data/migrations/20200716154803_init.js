@@ -34,10 +34,10 @@ exports.up = function(knex) {
         .references('id')//references id field
         .inTable('recipes')
       tbl.integer('step_order')// number order of steps
-        .unsigned()
-        .notNullable()
+        .unsigned()//never a negative number
+        .notNullable()//required
       tbl.text('step')
-      .notNullable()
+      .notNullable()//required
     })
   
 };
