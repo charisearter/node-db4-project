@@ -34,8 +34,6 @@ exports.seed = function(knex) {
           step: "Add the carrot pesto, cooked cavatappi, remaining lemon juice, and the remaining baby arugula to the large part over low heat. Cook until arugula is slightly wilted, 1 to 2 minutes. Taste, and add salt and pepper as necessary."},
         {recipe_id: 3, step_order: 7, 
           step: "Divide the carrot pesto cavatappi with lemon arugula between large bowls and sprinkle the remaining parmesan. ENJOY!"},
-
-     
       ]);
     });
 };
