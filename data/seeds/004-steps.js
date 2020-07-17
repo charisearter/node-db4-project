@@ -8,15 +8,16 @@ exports.seed = function(knex) {
       return knex('steps').insert([
         //no need for id because auto incremented
         //PB&J
-        {recipe_id: 1, step_order: 1, step: ""},
+        {recipe_id: 1, step_order: 1, step: "...Are you serious?"},
+        {recipe_id: 1, step_order: 2, step: "Take 2 slices of bread, spread peanut butter on one slice on one side, spread jelly on one side of the other slice. Put the peanut butter and jelly sides together."},
        
         //Miso Soba Noodles
         {recipe_id: 2, step_order: 1, 
-          step: "Bring a medium saucepan of salted water to a boil. Add soba noodles, gently stir, and cook until al dente, 2 to 3 minutes."},
+          step: "Bring a medium saucepan of salted water to a boil. Add soba noodles, gently stir, and cook until al dente, 2 to 3 minutes. Drain noodles and run under cold water to stop the cooking process, and return to the saucepan off heat."},
         {recipe_id: 2, step_order: 2, 
-            step: ""},
+            step: "Dice the tofu into ½ inch cubes. Slice zucchini into half moons. Zest and juice the lemon. Slice the scallion. Heat 1 tbsp olive oil in a large nonstick skillet over medium-high heat. Add diced tofu, sliced zucchini, a pinch of salt, and 1 tsp pepper. Cook until lightly browned, 5 to 7 minutes. Add lemon zest, toss, and remove skillet from heat."},
         {recipe_id: 2, step_order: 3, 
-              step: ""},
+              step: "Add the lemon juice, Dijon mustard, and white miso paste to a small bowl and stir. Add miso sauce to the cooked soba noodles and toss. Divide the miso soba noodles between bowls and top with lemon pepper tofu and zucchini. Sprinkle with sliced scallion."},
 
         //Carrot Pesto Cavatappi
         {recipe_id: 3, step_order: 1, 
