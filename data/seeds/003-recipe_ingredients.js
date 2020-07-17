@@ -2,10 +2,10 @@
 exports.seed = function(knex) {
   // Deletes ALL existing entries
   //truncate resets primary key each time (instead of del)
-  return knex('recipes').truncate()
+  return knex('recipe_ingredients').truncate()
     .then(function () {
       // Inserts seed entries
-      return knex('recipes').insert([
+      return knex('recipe_ingredients').insert([
         //no need for id because auto incremented
         //PB&J
         {recipe_id: 1, ingredient_id: 1, quantities: "2 tbsps"},
